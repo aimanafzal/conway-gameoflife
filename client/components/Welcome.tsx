@@ -24,8 +24,8 @@ type Props = StateProps & DispatchProps;
 
 const WelcomeComponent = ({ color, colorName, newColor, playerCount }: Props) => 
     <article css={welcomeStyle}>
-        <p>Your cells have a shade of <a onClick={newColor} css={[{color}, colorNameCss ]}>{colorName}</a>. {isTouchDevice ? 'Touch' : 'Click'}, drag and release to place cells!</p>
-        <p>{typeof playerCount !== 'undefined' && playerCount > 1 ? (<React.Fragment>There {playerCount-1 === 1 ? 'is' : 'are'} <strong>{playerCount - 1}</strong> {playerCount-1 === 1 ? 'other' : 'others'} here ...</React.Fragment>) : null}</p>
+        <p> <a onClick={newColor} css={[{color}, colorNameCss ]}>{colorName}</a>. {isTouchDevice ? 'Touch on color' : 'Click on color'}</p>
+        <p>{typeof playerCount !== 'undefined' && playerCount > 1 ? (<React.Fragment>There {playerCount-1 === 1 ? 'is' : 'are'} <strong>{playerCount - 1}</strong> {playerCount-1 === 1 ? 'other' : 'others'} player here ...</React.Fragment>) : null}</p>
     </article>
 
 export const Welcome = connect(
