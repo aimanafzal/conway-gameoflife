@@ -2,5 +2,5 @@ node_modules/
 coverage/
 .cache/
 **/*.log
-dist/
+
 .github\workflows/
