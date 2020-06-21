@@ -3,3 +3,4 @@ coverage/
 .cache/
 **/*.log
 dist/
+.github\workflows/
