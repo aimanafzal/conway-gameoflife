@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server/server.js",
-    "postinstall": "tsc",
+    
     "test": "tsc && jest",
     "clean": "rimraf dist/",
     "build-client": "parcel build client/index.html --out-dir dist/client",
